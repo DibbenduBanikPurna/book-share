@@ -11,7 +11,7 @@ const Login = () => {
     const {signIn, users,signInUsingGoogle}=useFirebase()
     //const [welcome,setWelcome]=useState(false)
     //console.log(user)
-    const location = useLocation()
+   // const location = useLocation()
     const history = useHistory()
 
     const handleChange = (e) => {
@@ -26,7 +26,7 @@ const Login = () => {
 
     const handleLogInSubmit = (e) => {
         e.preventDefault()
-        signIn(loginData.email, loginData.password, location, history)
+        signIn(loginData.email, loginData.password,  history)
         fetch('http://localhost:5000/users',{
             method:"POST",
             headers: { 'Content-Type': 'application/json' },
@@ -40,7 +40,7 @@ const Login = () => {
     }
 
     const handleGoggleSignIn=()=>{
-        signInUsingGoogle(location,history)
+        signInUsingGoogle(history)
         fetch('http://localhost:5000/users',{
             method:"POST",
             headers: { 'Content-Type': 'application/json' },

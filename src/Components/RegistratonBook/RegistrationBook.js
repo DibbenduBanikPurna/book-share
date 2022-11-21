@@ -39,26 +39,26 @@ const RegistrationBook = () => {
     
     return (
         <div className='container'>
-            <div className='row'>
+            <div className='row bg-light mt-5'>
                 <div className='col-md-4 m-auto'>
                 <form onSubmit={handleSubmit}>
                 <label>name:</label>
-                <br/>
-                <input onBlur={handleBlur} type="text" name="name" placeholder='Enter Name'/>
-                <br/>
+              
+                <input className='form-control' onBlur={handleBlur} type="text" name="name" placeholder='Enter Name'/>
+               
                 <label>email:</label>
-                <br/>
-                <input onBlur={handleBlur} type="text" name="email" placeholder='Enter email'/>
-                <br/>
+              
+                <input className='form-control' onBlur={handleBlur} type="text" name="email" placeholder='Enter email'/>
+               
                 <label>Dept:</label>
-                <br/>
-                <input onBlur={handleBlur} type="text" name="dept_name" placeholder='Enter Dept-name'/>
-                <br/>
+           
+                <input className='form-control' onBlur={handleBlur} type="text" name="dept_name" placeholder='Enter Dept-name'/>
+               
                                 <label>Enter book Name</label>
                                 <br/>
-                <textarea onBlur={handleBlur} placeholder="Enter Books" name="book"/> 
+                <textarea className='form-control' onBlur={handleBlur} placeholder="Enter Books" name="book"/> 
             <br/>
-            <input className='btn btn-success' type="submit" value="Book share"/>
+            <input className='btn btn-success form-control' type="submit" value="Book share"/>
             </form>
                 </div>
             </div>
