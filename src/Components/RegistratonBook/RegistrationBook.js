@@ -106,7 +106,7 @@ const RegistrationBook = () => {
             <br/>
             <input sx={{ width: '40%' }} accept="image/*" onChange={(e) => setImage(e.target.files[0])} type="file" />
                 <br />
-            <input className='btn btn-success form-control' type="submit" value="Book share"/>
+            <input className='btn btn-success form-control mt-2' type="submit" value="Book share"/>
             </form>
                 </div>
             </div>
